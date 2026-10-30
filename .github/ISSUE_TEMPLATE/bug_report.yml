@@ -1,0 +1,59 @@
+name: Bug report
+description: A plugin does not work as described
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Do not paste raw session logs, credentials or private conversation text.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happens
+      description: What you did and what went wrong. Include the error message if there is one.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: How to reproduce
+      description: The prompt or command you used and the steps that lead to the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Plugin
+      options:
+        - Session Stats
+        - Marketplace / installation
+        - Docs
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The plugin version (for example 0.1.2) or the commit you installed from.
+    validations:
+      required: true
+  - type: input
+    id: codex
+    attributes:
+      label: Codex version
+      description: The output of `codex --version`, and the Codex App version if you use it.
+  - type: input
+    id: os
+    attributes:
+      label: OS version
+      description: For example macOS 26.1.
+  - type: textarea
+    id: fix
+    attributes:
+      label: Suggested fix
+      description: Optional. If you know where the cause is, say so.
