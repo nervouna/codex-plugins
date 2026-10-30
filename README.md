@@ -5,7 +5,7 @@ English | [简体中文](README.zh-CN.md)
 ![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-blue)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-<!-- banner -->
+![Codex Plugins](docs/images/banner.jpg)
 
 A plugin marketplace for OpenAI Codex, maintained by Damao. Each plugin has its own version, and all of them install from this one marketplace. It currently ships one plugin, Session Stats, which shows token, turn, throughput and TTFT statistics for a local Codex session.
 
